@@ -1,7 +1,6 @@
 package jaytracer;
 
 import cgtools.StopWatch;
-import jaytracer.scenes.LightTest;
 import jaytracer.scenes.MirrorRoom;
 import jaytracer.scenes.Scene;
 
@@ -24,8 +23,8 @@ public class Main {
     public static void main(String[] args) {
         setParameters();
         // choose a scene here
-        scene = new LightTest(width, height);
-        String filename = "./doc/test.png";
+        scene = new MirrorRoom(width, height);
+        String filename = "./doc/rendered.png";
         try {
             // start the raytrace and write the result to the file
             raytrace().write(filename);
